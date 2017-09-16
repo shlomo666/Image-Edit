@@ -1,0 +1,88 @@
+body{
+    border: 2px solid black;
+    background: url("http://www.jemome.com/cdn/2010/06/facebook-web-page-backgrounds_12197.jpg");
+    background-size: 100%;
+}
+.centerScreen {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    height: fit-content;
+    width:fit-content;
+    color:aqua;
+}
+
+.buttons{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #E81111;
+    color:white;
+
+    padding: 10px 20px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+    font-size: 15px;
+
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.5), 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+    button:hover{
+        box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    }
+
+.browseButton {
+    margin-left: 10px;
+    float:left;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+    .browseButton:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+    }
+.saveButton{
+    margin-right: 10px;
+    float:right;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+    .saveButton:hover {
+        background-color: #105512; /* Green */
+        color: white;
+    }
+
+canvas{
+    border: 2px solid white;
+    border-radius: 15px;
+
+    margin-top: 10px;
+}
+
+.usersListView{
+    float:right;
+    margin-left:10px;
+    margin-top: 10px;
+}
+.userBlock{
+    border: 2px solid white;
+    font-weight:bold;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #555555;
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.userTitle{
+    margin-left:30%;
+    margin-right:10%;
+    color:white;
+}

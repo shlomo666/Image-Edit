@@ -1,0 +1,45 @@
+<html ng-app="myAppModel">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mainCss.css">
+        <title>Angular 1.4 Test</title>
+        <!-- Angular 1.4 -->
+        <script src="angular 1.4.min.js"></script>
+        <!-- Fabric -->
+        <script src="fabric.min.js"></script>
+        <!-- In order to save the canvas once finished editing -->
+        <script src="FileSaver.min.js"></script>
+        <!-- To support IE - In order to save the canvas once finished editing -->
+        <script src="canvas-toBlob.js"></script>
+        <!-- My addons -->
+        <script src="controller.js"></script>
+        <script src="browseButton.js"></script>
+        <script src="canvasService.js"></script>
+    </head>
+
+    <body ng-controller="mainController">
+        <div class="centerScreen">
+            <div class="buttons">
+                <button class="browseButton" browse-button>Browse Background Image</button>
+                <button class="saveButton" ng-click="save()">Save</button>
+            </div>
+            
+            <div style="float:left;">
+                <canvas id="myCanvas" width="800" height="563"/>
+            </div>
+            
+            <div class="usersListView">
+                <div class="userBlock" ng-repeat="user in users" ng-style="user.style">
+                    <br>
+                    <div class="userTitle">
+                        <div style="float:right;">{{user.user}}</div>
+                        <div style="float:left;">{{user.name}}</div>
+                    </div>
+                    <br/><br/>
+                    <img ng-src="{{user.picture}}" width="100" ng-click="pictureClick($index)" style="border-radius: 10px">
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
